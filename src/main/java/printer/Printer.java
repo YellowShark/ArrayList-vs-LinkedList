@@ -17,25 +17,25 @@ public class Printer {
     }
 
     public static void filledArrayMessage(long time, int listSize, List<Integer> list) {
-        System.out.println("Spent " + time + " ms to insert " + listSize + " elements into " + SET_BOLD_TEXT +
+        System.out.println("Spent " + time + " nanos to insert " + listSize + " elements into " + SET_BOLD_TEXT +
                 ANSI_CYAN + list.getClass().getName().replace(REPLACE_STRING, "") + SET_PLAIN_TEXT +
                 ANSI_RESET);
     }
 
     public static void removeMessage(long time, int position, List<Integer> list) {
-        System.out.println("Spent " + time + " ms to delete elem at " + position + " index from " + SET_BOLD_TEXT +
+        System.out.println("Spent " + time + " nanos to delete elem at " + position + " index from " + SET_BOLD_TEXT +
                 ANSI_CYAN + list.getClass().getName().replace(REPLACE_STRING, "") + SET_PLAIN_TEXT +
                 ANSI_RESET + " which has " + list.size() + " elements");
     }
 
     public static void insertMessage(long time, int position, List<Integer> list) {
-        System.out.println("Spent " + time + " ms to insert elem in " + position + " index to the " + SET_BOLD_TEXT +
+        System.out.println("Spent " + time + " nanos to insert elem in " + position + " index to the " + SET_BOLD_TEXT +
                 ANSI_CYAN + list.getClass().getName().replace(REPLACE_STRING, "") + SET_PLAIN_TEXT +
                 ANSI_RESET + " which has " + list.size() + " elements");
     }
 
     public static void getMessage(long time, int position, List<Integer> list) {
-        System.out.println("Spent " + time + " ms to get elem at " + position + " index from " + SET_BOLD_TEXT +
+        System.out.println("Spent " + time + " nanos to get elem at " + position + " index from " + SET_BOLD_TEXT +
                 ANSI_CYAN + list.getClass().getName().replace(REPLACE_STRING, "") + SET_PLAIN_TEXT +
                 ANSI_RESET + " which has " + list.size() + " elements");
     }
