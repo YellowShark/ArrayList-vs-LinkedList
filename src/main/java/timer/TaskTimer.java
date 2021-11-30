@@ -1,6 +1,6 @@
 package timer;
 
-public class MyTimer {
+public class TaskTimer {
     public long calculateExecutionTime(Callback function) {
         var startTime = System.nanoTime();
         function.call();

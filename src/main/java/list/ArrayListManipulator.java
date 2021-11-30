@@ -1,21 +1,20 @@
 package list;
 
 import printer.Printer;
-import timer.MyTimer;
+import timer.TaskTimer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class ArrayListManipulator {
     public List<Integer> arrayList;
     private final int listSize;
-    private final MyTimer timer;
+    private final TaskTimer timer;
 
     public ArrayListManipulator(int listSize) {
         this.listSize = listSize;
         this.arrayList = new ArrayList<>(this.listSize);
-        this.timer = new MyTimer();
+        this.timer = new TaskTimer();
     }
 
     public void fillArrayList() {

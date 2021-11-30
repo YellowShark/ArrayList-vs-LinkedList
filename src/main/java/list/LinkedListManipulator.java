@@ -1,19 +1,18 @@
 package list;
 
 import printer.Printer;
-import timer.MyTimer;
+import timer.TaskTimer;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Random;
 
 public class LinkedListManipulator {
     public List<Integer> linkedList;
-    private final MyTimer timer;
+    private final TaskTimer timer;
 
     public LinkedListManipulator() {
         this.linkedList = new LinkedList<>();
-        this.timer = new MyTimer();
+        this.timer = new TaskTimer();
     }
 
     public void fillLinkedList(int listCount) {
